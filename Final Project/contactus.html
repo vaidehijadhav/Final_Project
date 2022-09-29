@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="contactus.css">
+</head>
+<body>
+    <!-- header section starts  -->
+<header>
+    <div class="logo-container">
+        <img src="./logo.jpg">
+        <h4 class="logo">Movie</h4>
+    </div>
+    <nav>  
+        <ul class="navbar">
+            <li><a class="navbar" href="./home.html">home</a></li>
+            <li><a class="navbar" href="./contactus.html">contact us</a></li>
+            <li><a class="navbar" href="./about.html">about</a></li>
+            <li><a class="navbar" href="./movie.html">movie</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="contain">
+
+    <div class="wrapper">
+  
+      <div class="form">
+        <h4>GET IN TOUCH</h4>
+        <h2 class="form-headline">Send us a message</h2>
+        <form id="submit-form" action="">
+          <p>
+            <input id="name" class="form-input" type="text" placeholder="Your Name*">
+            <small class="name-error"></small>
+          </p>
+          <p>
+            <input id="email" class="form-input" type="email" placeholder="Your Email*">
+            <small class="name-error"></small>
+          </p>
+          <p class="full-width">
+            <input id="Review" class="form-input" type="text" placeholder="Review*" required>
+            <small></small>
+          </p>
+          <p class="full-width">
+            <textarea  minlength="20" id="message" cols="30" rows="7" placeholder="Your Message*" required></textarea>
+            <small></small>
+          </p>
+          <p class="full-width">
+            <input type="checkbox" id="checkbox" name="checkbox" checked> Yes, I have fill correct information.
+          </p>
+          <p class="full-width">
+            <input type="submit" class="submit-btn" value="Submit" onclick="checkValidations()">
+            <button class="reset-btn" onclick="reset()">Reset</button>
+          </p>
+        </form>
+      </div>
+  
+      <div class="contacts contact-wrapper">
+  
+        <ul>
+          <li>time-saving & easy to use <span class="highlight-text-grey">$2
+              billion</span> movies
+            how we can help you?</li>
+          <span class="hightlight-contact-info">
+            <li class="email-info"><i class="fa fa-envelope" aria-hidden="true"></i> moviemania@gmail.com</li>
+            <li><i class="fa fa-phone" aria-hidden="true"></i> <span class="highlight-text">+91 11 1111 2900</span></li>
+          </span>
+        </ul>
+      </div>
+    </div>
+  </div>
+<script src="./contactus.js"></script>
+</body>
+</html>
